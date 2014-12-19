@@ -1,2 +1,5 @@
-tools
+Tools
 =====
+I plan to publish various useful bare bones projects here (to the point, nothing fancy), showcasing known approaches that anyone can use in their code. The idea is that some complex topics are rarely covered and full and a working solution is usually assembled piece by piece using StackOverflow answers, MSDN, other forums etc., after several days of brainstorming. Every project listed here will be a complete solution, that "just works", which will be illustrated in a small demo project (where you can plug in your own code, and see if it suits you, test your tweaks etc.). I will try to keep code maintainability index around 80, so that no verbose explanation is required to understand how it works.
+
+**[ExpandableObject](https://github.com/VictorZakharov/tools/tree/master/ExpandableObject)** is a proof of concept project, which shows how to implement property grid expansion for custom types. Contains as little code as possible, showing different approaches of adding necessary type descriptors to custom types - manually, all types in the current assembly, all types in the specific assembly, all types in an assembly under filter. Solution includes two projects - type descriptor logic and a WinForms demo application, both written in C#.
