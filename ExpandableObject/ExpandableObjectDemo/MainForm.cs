@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Windows.Forms;
@@ -15,7 +16,9 @@ namespace ExpandableObjectDemo
             InitializeComponent();
 
             ExpandableObjectManager.TypeDescriptors.Add(Assembly.GetExecutingAssembly());
-            ExpandableObjectManager.TypeDescriptors.Add(typeof(List<Employee>));
+            ExpandableObjectManager.TypeDescriptors.Add(typeof(IList));
+            //or, more specific:
+            //ExpandableObjectManager.TypeDescriptors.Add(typeof(List<Employee>));
             
             _department = CreateDepartment();
         }

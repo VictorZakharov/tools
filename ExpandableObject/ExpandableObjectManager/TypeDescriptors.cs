@@ -61,7 +61,7 @@ namespace ExpandableObjectManager
 
         private static Type GetConverterForType(Type tItem)
         {
-            if (tItem.ImplementsInterface(typeof(IList)))
+            if (typeof(IList).IsAssignableFrom(tItem))
             {
                 return typeof(ExpandableCollectionConverter);
             }
